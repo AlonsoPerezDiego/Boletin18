@@ -58,16 +58,13 @@ public class Buzon {
     }
     
     public void primeroNoLeido(){
-        int cont = 0;
-        boolean sinL = false;
-        
-        do{
-            if(elBuzon.get(cont).isLeido()){
-                sinL=true;
+        int pos = 0;
+        for(int i = 0; i<elBuzon.size(); i++){
+            if(elBuzon.get(i).isLeido()==false){
+                pos=i;
             }
-            cont++;
-        }while(sinL!=true|cont<numCorreos());
-        System.out.println(elBuzon.get(cont));
+        }
+        System.out.println(elBuzon.get(pos));
     }
     
     public void mostrar(int k){

@@ -21,7 +21,7 @@ public class Boletin18 {
         Buzon buz = new Buzon();
         do{
             int cont = 1;
-            selec = Integer.parseInt(JOptionPane.showInputDialog("1: Introducir correo. \n2: Mostrar correo concreto. \n3: Mostrar número de correos.\n4: Mostrar si quedan correos sin leer. \n5: Primer correo sin leer. \n6: Eliminar un correo."));
+            selec = Integer.parseInt(JOptionPane.showInputDialog("1: Introducir correo. \n2: Mostrar correo concreto. \n3: Mostrar número de correos.\n4: Mostrar si quedan correos sin leer. \n5: Primer correo sin leer. \n6: Eliminar un correo.\n7: Salir."));
             switch(selec){
                 case 1: buz.añadeCorreo(new Correo(cont, pedirString("Nombre origen"), pedirBoolean("True: El correo ya fue leído. \nFalse: El correo no fue leído.")));
                         break;
